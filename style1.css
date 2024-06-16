@@ -245,39 +245,73 @@ body {
     margin: 15px;
 }
 .footer {
-    background-color: #d23c2b;
-    color: #fff;
-    padding: 2rem 0;
+    background-color: #333;
+    padding: 20px 0;
+    color: #f7f7f7;
 }
 
-.footer h5 {
-    margin-bottom: 1rem;
-    font-weight: bold;
+.footer-logo {
+    max-width: 150px;
 }
 
-.social-icon {
-    color: #fff;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+.social-icons a {
+    font-size: 24px;
+    color: #f8f9fa;
+    position: relative;
+    transition: 0.4s ease;
 }
 
-.social-icon:hover {
+.social-icons a:hover {
     color: #d23c2b;
 }
 
-.map-container {
-    margin-top: 1rem;
+.useful-info a {
+    display: block;
+    color: #f8f9fa;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.4s ease;
 }
 
-#map iframe {
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.useful-info a:hover {
+    color: #d23c2b;
 }
 
+.address a {
+    color: #f8f9fa;
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.address a:hover {
+    color: #d23c2b;
+}
+.social-icons a::after, .useful-info a::after, .address a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(210, 60, 43); /* Change this to your desired underline color */
+    transform-origin: bottom right;
+    transition: width 0.5s ease-out;
+}
+.social-icons a:hover::after, .useful-info a:hover::after, .address a:hover::after{
+    width: 100%;
+    transform-origin: bottom left;
+}
 .footer p {
-    margin-top: 1rem;
+    margin: 0;
+    color: #f8f9fa;
 }
+.footer .copyright{
+    color: #f7f7f7;
+    background-color: #d23c2b;
+    width: 100%;
+}
+
 
 
 
