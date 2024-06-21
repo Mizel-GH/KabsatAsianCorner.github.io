@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabsat Asian Corner</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="abt-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="submitForm.js"></script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-contact" href="#"><img src="images/phone.png" alt="phone">+64 21 155 0537</a>
+        <a class="navbar-brand " href="index.html">
+            <img src="images/logo2.png" alt="">
+        </a>        
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Balikbayan Box</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <!-- Header Section -->
+        <header class="jumbotron">
+            <div class="overlay"></div>
+            <div class="container abt-us">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 id="ci" class="ml-3">Contact Informations</h1>
+                        <h3 class="ml-3"> We'd love to hear from you!</h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Contact Info -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>Contact <span> Us </span></h2>
+            <p>We value your feedback and inquiries. Feel free to reach out to us using the contact information below or visit our store in person. We look forward to assisting you!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="title">
+                    <h3>Contact details</h3>
+                </div>
+                <div class="content">
+                    <!-- Info-1 -->
+                    <div class="info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>+64 21 155 0537</span>
+                    </div>
+                    <!-- Info-2 -->
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <span>mjasiantindahan@gmail.com</span>
+                    </div>
+                    <!-- Info-3 -->
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>25 Alexandra Street,
+                            Te Awamutu, New Zealand</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn btn-block btn-primary" type="button" onclick="submitForm()">Send Now!</button>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="section-title text-center mb-4">Find us on Google Maps</h2>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <div class="map-container">
+                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.581363045449!2d175.32266617538215!3d-38.01022414529075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6ce6f7a008c913%3A0x75d8c3f45469c666!2s25%20Alexandra%20Street%2C%20Te%20Awamutu%203800%2C%20New%20Zealand!5e0!3m2!1sen!2sph!4v1718775929409!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row justify-content-between">
+                <!-- Logo and Description -->
+                <div class="col-md-4 mb-4">
+                    <img src="images/kabsat-logo.png" alt="Logo" class="footer-logo img-fluid mb-2">
+                    <p>Your ultimate hub for Filipino and Asian groceries awaits! Step into our store and find a wide array of fresh, authentic ingredients and products. Come shop with us and experience the taste of home!</p>
+                </div>
+                <!-- Follow Us, Useful Information, and Contact -->
+                <div class="col-md-8 mb-4">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <!-- Social Media Links -->
+                            <h5>Follow Us</h5>
+                            <div class="social-icons d-flex justify-content-center">
+                                <a href="https://www.facebook.com/profile.php?id=100094204334980" target="_blank" class="social-icon mx-2">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank" class="social-icon mx-2">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="mailto:mjasiantindahan@gmail.com" target="_blank" class="social-icon mx-2">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <!-- Useful Information -->
+                            <h5>Useful Information</h5>
+                            <div class="useful-info">
+                                <a href="about-us.html">About Us</a>
+                                <a href="order-page.html">How to Order</a>
+                                <a href="#">Balikbayan Box</a>
+                                <a href="contact-us.html">Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <!-- Map Location -->
+                            <h5>Contact</h5>
+                            <div id="add" class="address">
+                                <a href="https://maps.app.goo.gl/RuNuUkBRUHQrhwvH9">25 Alexandra Street,<br>
+                                Te Awamutu,<br>New Zealand</a>
+                                <p>Phone: +64 21 155 0537</p>
+                                <p>Email:mjasiantindahan@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="copyright">&copy; 2024 Kabsat Asian Corner</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

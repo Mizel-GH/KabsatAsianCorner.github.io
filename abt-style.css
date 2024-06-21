@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8E4C9;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Skaters';
+    src: url('fonts/Skaters.ttf') format('truetype');
+    /* Add additional src declarations for different font formats if needed */
+}
+.navbar{
+    background-color: #202267;
+}
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Adjust the value as needed */
+    width: auto;
+    margin: auto; /* Center horizontally */
+}
+
+
+.navbar-toggler.custom-toggler  {
+    border-color: rgba(255, 255, 255, 1) !important; /* Ensuring the border color is white */
+  }
+
+  .navbar-toggler.custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+  }
+  .navbar .navbar-nav .nav-link, .navbar-contact  {
+    color: white !important;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.4s ease; /* Corrected transition property */
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar-contact:hover {
+    color: yellow !important;
+}
+
+.navbar .navbar-nav .nav-link::after, .navbar-contact::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(228, 250, 102); /* Change this to your desired underline color */
+    transform-origin: bottom right;
+    transition: width 0.5s ease-out;
+}
+
+.navbar .navbar-nav .nav-link:hover::after, .navbar-contact:hover::after {
+    width: 100%;
+    transform-origin: bottom left;
+}
+/* about us page */
+.jumbotron {
+    position: relative;
+    background: url('images/kabsat-bg.PNG') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+    z-index: 1;
+}
+
+.abt-us {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    white-space: nowrap;
+    margin: 0;
+    font-family: 'Skaters', sans-serif;
+    
+}
+.container .aboutus-title{
+    margin-top: -20px;
+    color: #202267;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+.about-us img{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    border-radius: 8px;
+}
+
+.about-us p {
+    text-align: justify; /* Justify text within paragraphs */
+}
+
+.text-justify {
+    text-align: justify; /* Justify text within this class */
+}
+.sec2{
+    margin-top: 30px;
+}
+.center-hr2 {
+    width: 100%;
+    border: 1px solid #000; /* Adjust the color and thickness as needed */
+    margin-top: 120px;
+}
+.center-hr1 {
+    width: 100%;
+    border: 1px solid #000; /* Adjust the color and thickness as needed */
+    margin-top: 1px;
+}
+.footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #f7f7f7;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #f8f9fa;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.social-icons a:hover {
+    color: #d23c2b;
+}
+
+.useful-info a {
+    display: block;
+    color: #f8f9fa;
+    margin: 5px 0;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.useful-info a:hover {
+    color: #d23c2b;
+}
+
+.address a {
+    color: #f8f9fa;
+    text-decoration: none;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.address a:hover {
+    color: #d23c2b;
+}
+.social-icons a::after, .useful-info a::after, .address a::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(210, 60, 43); /* Change this to your desired underline color */
+    transform-origin: bottom right;
+    transition: width 0.5s ease-out;
+}
+.social-icons a:hover::after, .useful-info a:hover::after, .address a:hover::after{
+    width: 100%;
+    transform-origin: bottom left;
+}
+.footer p {
+    margin: 0;
+    color: #f8f9fa;
+}
+.footer .copyright{
+    color: #f7f7f7;
+    background-color: #d23c2b;
+    width: 100%;
+}
+#ci{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*contact info */
+.contact {
+    padding: 30px 0;
+    background-color: white;
+    background-size: 100%;
+}
+
+.contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+.contact .heading h2 span {
+    color: #202267;
+}
+
+.contact .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.contact .form-control {
+    padding: 25px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #202267;
+    border: 0;
+    border-radius: 10px;
+    color: #f7f7f7;
+}
+
+.contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #ff9100;
+    color: #ffffff;
+}
+
+.contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+}
+
+.contact .content .info {
+    margin-top: 30px;
+}
+.contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #202267;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+}
+.contact .content .info h4 {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.contact .content .info h4 span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #999999;
+}
+.map{
+    background-color: #f7f7f7;
+    padding: 35px;
+}
+.map-container {
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Optional: Rounded corners */
+    overflow: hidden; /* Ensure iframe doesn't extend beyond border */
+    width: 500px;
+    height: 400px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+}
